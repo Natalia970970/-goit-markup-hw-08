@@ -641,8 +641,12 @@ body {
   transform: rotate(90deg);
 }
 
+.menu_link--current {
+  color: var(--accent-color);
+}
+
 .hero {
-  padding: 118px 60px;
+  padding: 118px 0;
   background-color: #2F303A;
   max-width: 1600px;
   max-height: 600px;
@@ -657,7 +661,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 118px 204px;
+    padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-tablet.jpg");
     background-size: cover;
   }
@@ -683,7 +687,7 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 26px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -1148,11 +1152,13 @@ body {
   .contacts-join {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts-join {
     display: flex;
+    align-items: baseline;
   }
 }
 
